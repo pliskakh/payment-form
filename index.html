@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+	<div class="ba-container">
+		<form class="ba-payment" action="#" method="post">
+		<div class="ba-payment__header">
+			<div class="ba-payment__price">$88</div>
+			<h3 class="ba-payment__title">Harold Finch</h3>
+			<div class="ba-payment__total">Your total</div>
+			
+		</div>
+		
+		<div class="ba-payment__body">
+			<div class="ba-form-row">
+				<label for="card-number">Credit card number</label>
+				<input type="number" name="card-number" id="card-number" required placeholder="Enter your credit card number">
+			</div>
+			<div class="ba-form-row cf">
+				<label for="expire-month" id="expire-month">Expiration date</label>
+				<select name="expire-month" id="expire-month">
+					<option hidden>Month</option>
+					<option value="01">January</option>
+					<option value="02">February</option>
+					<option value="03">March</option>
+				</select>
+				<select name="expire-year" id="expire-year">
+					<option hidden>Year</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+				</select>
+			</div>
+			<!-- BEGIN ba-from-row  -->
+			<div class="ba-form-row">
+				<label for="card-cvv">CVV</label>
+				<input class="ba-payment__cvv" type="number" name="card-cvv" id="card-cvv" size="3"
+				maxlength="3">
+				<span class="ba-payment__cvv-info">
+					3 or 4 digits - <a href="#">view example</a>
+				</span>
+			</div>
+			<!-- END ba-from-row -->
+			<!-- BEGIN ba-text-center  -->
+			<div class="ba-payment__footer ba-text-center">
+				<button class="ba-button ba-payment__submit" type="submit">Pay</button>
+				<a href="#">Cancel order</a>
+			</div>
+			<!-- END ba-text-center -->
+		</div>
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body{
+	font: 400 14px/1.3 'Montserrat', sans-serif;
+	background: #3a3e41 url('../img/bg.jpg') 100% 0;
+	background-size: cover;
+	color: #6e7f7b;
+}
+
+/* Layout */
+.ba-container{
+	padding: 35px 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a {
+	color: #9eabad;
+}
+a:hover {
+	color: #25b86a;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color: #25b86a;
+	height: 48px;
+	line-height: 48px;
+	border: none;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 0 30px;
+	border-radius: 0;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: orange;
+}
+
+label{
+	color: #9eabad;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: #bac8cb;
+	background-color: #ffffff;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 7px;
+	color:  #727f82;
+	font-size: 13px;
+	border-radius: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	border-color:  #82d4e7;
+	outline: none;
+}
+textarea {
+	height: auto;
+	line-height: 1.5;
+	padding-top: 7px;
+}
+
+.ba-payment {
+ 	background: #FFF;
+ 	max-width: 336px;
+ 	margin: 0 auto;
+}
+
+.ba-payment__header {
+	padding: 21px 24px 19px;
+	background: #f8edaf;
+}
+
+.ba-payment__title {
+	margin: 0;
+	font-size: 14px;
+}
+
+.ba-payment__total {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #A6A28D;
+	letter-spacing: 0.075em;
+}
+
+.ba-payment__price {
+	float: right;
+	font-size: 36px;
+	line-height: 1;
+	letter-spacing: -0.05em;
+}
+
+.ba-payment__body {
+	padding: 43px 24px 20px;
+}
+
+.ba-form-row {
+	margin-bottom: 24px;	
+}
+
+.ba-payment label {
+	display: block;
+}
+
+.ba-payment__submit {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+[name="card-number"] {
+	width: 100%;
+}
+
+[name="expire-month"] {
+	width: 62%;
+	float: left;
+}
+
+[name="expire-year"] {
+	width: 30%;
+	float: right;
+}
+
+[name="card-cvv"] {
+	width: 96px;
+}
+
+.ba-payment__cvv-info {
+	font-size: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
